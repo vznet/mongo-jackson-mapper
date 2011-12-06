@@ -1,24 +1,24 @@
 -classpath
-'/Users/jroper/src/mongo-jackson-mapper/target/classes:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.6/jackson-mapper-asl-1.8.6.jar:/Users/jroper/.m2/repository/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar:/Users/jroper/.m2/repository/org/mongodb/mongo-java-driver/2.7.2/mongo-java-driver-2.7.2.jar:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.6/jackson-core-asl-1.8.6.jar'
+'/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/classes:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.6/jackson-mapper-asl-1.8.6.jar:/Users/jroper/.m2/repository/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar:/Users/jroper/.m2/repository/org/mongodb/mongo-java-driver/2.7.2/mongo-java-driver-2.7.2.jar:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.6/jackson-core-asl-1.8.6.jar'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/Users/jroper/src/mongo-jackson-mapper/src/main/java'
+'/Users/jroper/src/mongo-jackson-mapper/target/checkout/src/main/java'
 -author
 -bottom
 'Copyright &#169; 2011 <a href="http://vz.net">VZ Netzwerke</a>. All Rights Reserved.'
 -charset
 'UTF-8'
 -d
-'/Users/jroper/src/mongo-jackson-mapper/target/site/apidocs'
+'/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'MongoDB Jackson POJO Mapper 1.1-SNAPSHOT API'
+'MongoDB Jackson POJO Mapper 1.1 API'
 -linkoffline
-'http://download.oracle.com/javase/1.5.0/docs/api' '/Users/jroper/src/mongo-jackson-mapper/target/javadoc-bundle-options'
+'http://download.oracle.com/javase/1.5.0/docs/api' '/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'MongoDB Jackson POJO Mapper 1.1-SNAPSHOT API'
+'MongoDB Jackson POJO Mapper 1.1 API'

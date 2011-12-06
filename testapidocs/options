@@ -1,26 +1,26 @@
 -classpath
-'/Users/jroper/src/mongo-jackson-mapper/target/classes:/Users/jroper/src/mongo-jackson-mapper/target/test-classes:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.6/jackson-mapper-asl-1.8.6.jar:/Users/jroper/.m2/repository/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar:/Users/jroper/.m2/repository/junit/junit-dep/4.8.1/junit-dep-4.8.1.jar:/Users/jroper/.m2/repository/org/hamcrest/hamcrest-library/1.2.1/hamcrest-library-1.2.1.jar:/Users/jroper/.m2/repository/org/hamcrest/hamcrest-core/1.2.1/hamcrest-core-1.2.1.jar:/Users/jroper/.m2/repository/org/mongodb/mongo-java-driver/2.7.2/mongo-java-driver-2.7.2.jar:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.6/jackson-core-asl-1.8.6.jar'
+'/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/classes:/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/test-classes:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.6/jackson-mapper-asl-1.8.6.jar:/Users/jroper/.m2/repository/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar:/Users/jroper/.m2/repository/junit/junit-dep/4.8.1/junit-dep-4.8.1.jar:/Users/jroper/.m2/repository/org/hamcrest/hamcrest-library/1.2.1/hamcrest-library-1.2.1.jar:/Users/jroper/.m2/repository/org/hamcrest/hamcrest-core/1.2.1/hamcrest-core-1.2.1.jar:/Users/jroper/.m2/repository/org/mongodb/mongo-java-driver/2.7.2/mongo-java-driver-2.7.2.jar:/Users/jroper/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.6/jackson-core-asl-1.8.6.jar'
 -encoding
 'UTF-8'
 -protected
 -sourcepath
-'/Users/jroper/src/mongo-jackson-mapper/src/test/java'
+'/Users/jroper/src/mongo-jackson-mapper/target/checkout/src/test/java'
 -author
 -bottom
 'Copyright &#169; 2011 <a href="http://vz.net">VZ Netzwerke</a>. All Rights Reserved.'
 -charset
 'UTF-8'
 -d
-'/Users/jroper/src/mongo-jackson-mapper/target/site/testapidocs'
+'/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/site/testapidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'MongoDB Jackson POJO Mapper 1.1-SNAPSHOT Test API'
+'MongoDB Jackson POJO Mapper 1.1 Test API'
 -link
 '../apidocs'
 -linkoffline
-'http://download.oracle.com/javase/1.5.0/docs/api' '/Users/jroper/src/mongo-jackson-mapper/target/javadoc-bundle-options'
+'http://download.oracle.com/javase/1.5.0/docs/api' '/Users/jroper/src/mongo-jackson-mapper/target/checkout/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'MongoDB Jackson POJO Mapper 1.1-SNAPSHOT Test API'
+'MongoDB Jackson POJO Mapper 1.1 Test API'

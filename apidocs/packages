@@ -1,2 +1,4 @@
 net.vz.mongodb.jackson
 net.vz.mongodb.jackson.internal
+net.vz.mongodb.jackson.internal.object
+net.vz.mongodb.jackson.internal.stream

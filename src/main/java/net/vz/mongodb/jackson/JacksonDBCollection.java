@@ -594,7 +594,7 @@ public class JacksonDBCollection<T, K> {
      * @return the object
      */
     public T findAndModify(DBObject query, DBObject fields, DBObject sort, boolean remove, DBUpdate.Builder update, boolean returnNew, boolean upsert) {
-        return this.findAndModify(query, fields, sort, remove, update.serialiseAndGet(objectMapper), returnNew, upsert));
+        return this.findAndModify(query, fields, sort, remove, update.serialiseAndGet(objectMapper), returnNew, upsert);
     }
 
 

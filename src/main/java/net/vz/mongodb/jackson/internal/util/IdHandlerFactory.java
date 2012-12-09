@@ -55,6 +55,10 @@ public class IdHandlerFactory {
 
         JsonDeserializer deserializer = objectMapper.getDeserializerProvider().findTypedValueDeserializer(
                 objectMapper.copyDeserializationConfig(), SimpleType.construct(klass), null);
+        if ("org.codehaus.jackson.map.deser.StdDeserializerProvider$WrappedDeserializer".equals(deserializer.getClass().getName())) {
+        	// Cannot use instanceof on a class that's not visible, so using reflection
+        	deserializer = (JsonDeserializer) privateGet(deserializer, "_deserializer");
+        }
         if (deserializer instanceof BeanDeserializer) {
             // First priority is a property creator, see if one exists
             Object propertyBasedCreator = privateGet(deserializer, "_propertyBasedCreator");

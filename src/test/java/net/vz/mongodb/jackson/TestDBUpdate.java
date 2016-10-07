@@ -21,7 +21,9 @@ import net.vz.mongodb.jackson.mock.MockObject;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Pattern;
 
 import static org.hamcrest.Matchers.hasItem;
@@ -129,6 +131,27 @@ public class TestDBUpdate extends MongoDBTestBase {
         MockObject updated = coll.findOneById("blah");
         assertThat(updated.simpleList, hasSize(3));
         assertThat(updated.simpleList, hasItem("!"));
+    }
+    
+    @Test
+    public void testAddToSetNew() throws Exception {
+    	List<String> mentionList = new ArrayList<String>();
+    	mentionList.add("rumor");
+    	coll.update(DBQuery.is("_id", "clef")
+    			.is("string", "strung")
+    			.is("integer", 42),
+    			DBUpdate.addToSet("simpleList", mentionList), true, false);
+    	MockObject item = coll.findOneById("clef");
+    	assertThat(item.simpleList, hasSize(1));
+    	assertThat(item.simpleList, hasItem("rumor"));
+    	mentionList.clear();
+    	mentionList.add("arglebargle");
+    	coll.update(DBQuery.is("_id", "clef"),
+    			    DBUpdate.addToSet("simpleList", mentionList), true, false);
+    	item = coll.findOneById("clef");
+    	assertThat(item.simpleList, hasSize(2));
+    	assertThat(item.simpleList, hasItem("rumor"));
+    	assertThat(item.simpleList, hasItem("arglebargle"));
     }
 
     @Test
